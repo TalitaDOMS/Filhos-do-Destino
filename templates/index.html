@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Criação da ficha</title>
+</head>
+<body>
+<form>
+    <label for="nomeJogador">Nome do jogador</label><br>
+    <input id="nomeJogador" name="nomeJogador" type="text"><br><br>
+    <label for="nomePersonagem">Nome do personagem</label><br>
+    <input id="nomePersonagem" name="nomePersonagem" type="text"><br><br>
+    <label for="parenteDivino">Ascendente divino</label><br>
+    <select id="parenteDivino" name="parenteDivino">
+        <option value="Zeus">Zeus</option>
+        <option value="Poseidon">Poseidon</option>
+        <option value="Hades">Hades</option>
+        <option value="Atena">Atena</option>
+        <option value="Ares">Ares</option>
+        <option value="Hermes">Hermes</option>
+        <option value="Apolo">Apolo</option>
+        <option value="Afrodite">Afrodite</option>
+        <option value="Hefesto">Hefesto</option>
+        <option value="Dionísio">Dionísio</option>
+        <option value="Deméter">Deméter</option>
+        <option value="Nike">Nike</option>
+    </select><br><br>
+    <label for="armamento">Armamentos</label><br>
+    <select id="armamento">
+        <option>Atirador</option>
+        <option>Espadachim</option>
+        <option>Lutador</option>
+    </select><br><br>
+    <label for="humanidade">Humanidade</label><br>
+    <select id="humanidade">
+        <option>Empático (25%)</option>
+        <option>Desumano (0%)</option>
+        <option>Monstruoso (-25%)</option>
+    </select>
+    <table>
+        <tr>
+            <th>Força</th>
+            <th>Destreza</th>
+            <th>Vigor</th>
+            <th>Inteligência</th>
+            <th>Carisma</th>
+            <th>Aparência</th>
+        </tr>
+        <tr>
+            <td><input id="for" type="number" min="1" max="5"></td>
+            <td><input id="des" type="number" min="1" max="5"></td>
+            <td><input id="vig" type="number" min="1" max="5"></td>
+            <td><input id="int" type="number" min="1" max="5"></td>
+            <td><input id="car" type="number" min="1" max="5"></td>
+            <td><input id="apa" type="number" min="1" max="5"></td>
+        </tr>
+    </table>
+    <button type="submit">Cadastrar ficha</button>
+
+</form>
+</body>
+</html>
