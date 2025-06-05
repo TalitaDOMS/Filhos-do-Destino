@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Lista de fichas</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
   <h1>Lista de fichas</h1>
@@ -10,45 +11,58 @@
     <a href="/">Criar ficha</a>
     <a href="/fichas">Histórico de fichas</a>
   </nav>
-  <div>
+  <div class="conteudo">
     {% for nomePersonagem, nomeJogador, parenteDivino, armamento, humanidade, forca, destreza, vigor, inteligencia, carisma, aparencia, vida, estamina, aspis, focoAtributo in dados %}
-    <h1>{{ nomePersonagem }}</h1>
-    <h2>{{ nomeJogador }}</h2>
-    <p>Parente divino: {{ parenteDivino }}</p>
-    <p>Armamento: {{ armamento }}</p>
-    <p>Humanidade inicial: {{ humanidade }}</p>
-    <p>Atributo foco: {{ focoAtributo }}</p>
-    <table>
-      <tr>
-        <th>Áspis</th>
-        <th>Vida</th>
-        <th>Estamina</th>
-      </tr>
-      <tr>
-        <td>{{ aspis }} </td>
-        <td>{{ vida }}</td>
-        <td>{{ estamina }}</td>
-      </tr>
-    </table>
-    <table>
-      <tr>
-        <th>Força</th>
-        <th>Destreza</th>
-        <th>Vigor</th>
-        <th>Inteligência</th>
-        <th>Carisma</th>
-        <th>Aparência</th>
-      </tr>
-      <tr>
-        <td>{{ forca }}</td>
-        <td>{{ destreza }}</td>
-        <td>{{ vigor }}</td>
-        <td>{{ inteligencia }}</td>
-        <td>{{ carisma }}</td>
-        <td>{{ aparencia }}</td>
-      </tr>
-    </table>
-    {% endfor %}
+    <div class="ficha">
+      <div class="titulo">
+          <h2>Ficha de {{ nomePersonagem }}</h2>
+          <p>Jogador: {{ nomeJogador }}</p>
+        </div>
+        <table>
+          <tr>
+            <th>Parente divino</th>
+            <td>{{ parenteDivino }}</td>
+            <th>Armamento</th>
+            <td>{{ armamento }}</td>
+          </tr>
+          <tr>
+            <th>Humanidade</th>
+            <td>{{ humanidade }}</td>
+            <th>Atributo foco</th>
+            <td>{{ focoAtributo }}</td>
+        </table>
+        <table>
+          <tr>
+            <th>Áspis</th>
+            <th>Vida</th>
+            <th>Estamina</th>
+          </tr>
+          <tr>
+            <td id="aspis">{{ aspis }} </td>
+            <td id="vida">{{ vida }}</td>
+            <td id="estamina">{{ estamina }}</td>
+          </tr>
+        </table>
+        <table>
+          <tr>
+            <th>Força</th>
+            <th>Destreza</th>
+            <th>Vigor</th>
+            <th>Inteligência</th>
+            <th>Carisma</th>
+            <th>Aparência</th>
+          </tr>
+          <tr>
+            <td>{{ forca }}</td>
+            <td>{{ destreza }}</td>
+            <td>{{ vigor }}</td>
+            <td>{{ inteligencia }}</td>
+            <td>{{ carisma }}</td>
+            <td>{{ aparencia }}</td>
+          </tr>
+        </table>
+      </div>
+      {% endfor %}
   </div>
 </body>
 </html>

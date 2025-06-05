@@ -1,3 +1,81 @@
 body {
+    background-color: #ffe4c4;
+}
+nav {
+    background-color: #604300;
+    padding: 15px;
+}
+h1 {
+    text-align: center;
+    color: #604300;
+}
+/* Estilo para links */
+a {
+    color: #ffe4c4;
+    padding: 5px 10px;
+    border: 1px solid #d9b07f;
+    border-radius: 5px;
+    text-decoration: none;
+}
+a:hover {
+    background-color: #d9b07f;
+    color: #604300;
+}
+button {
+    color: #ffe4c4;
+    background-color: #604300;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+button:hover {
+    background-color: #d9b07f;
+    color: #604300;
+}
 
+/* Estilo para o título */
+div.titulo {
+    background-color: #2f2100;
+    color: #ffe4c4;
+    padding: 5px 20px;
+}
+div.ficha {
+    background-color: #d9b07f;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+td, th {
+    padding: 5px;
+    text-align: center;
+    width: auto;
+    border: 1px solid black;
+}
+th {
+    background-color: #604300;
+    color: #ffe4c4;
+    padding: 10px;
+}
+
+td {
+    padding: 25px;
+}
+
+table {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    table-layout: fixed;
+    word-wrap: break-word;
+}
+
+
+
+/* Estilo para input */
+input[type="text"], input[type="number"], select{
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #604300;
+    border-radius: 4px;
+    background-color: #ffe4c4;
 }

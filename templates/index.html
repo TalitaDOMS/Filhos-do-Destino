@@ -3,46 +3,59 @@
 <head>
     <meta charset="UTF-8">
     <title>Criação da ficha</title>
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
+    <h1>Criação da ficha</h1>
     <nav>
         <a href="/">Criar ficha</a>
         <a href="/fichas">Histórico de fichas</a>
-      </nav>
-    <div>
+    </nav>
+    <div class="conteudo">
         <form action="/salvar" method="post">
-            <label for="nomeJogador">Nome do jogador</label><br>
-            <input id="nomeJogador" name="nomeJogador" type="text"><br><br>
-            <label for="nomePersonagem">Nome do personagem</label><br>
-            <input id="nomePersonagem" name="nomePersonagem" type="text"><br><br>
-            <label for="parenteDivino">Ascendente divino</label><br>
-            <select id="parenteDivino" name="parenteDivino">
-                <option value="Zeus">Zeus</option>
-                <option value="Poseidon">Poseidon</option>
-                <option value="Hades">Hades</option>
-                <option value="Atena">Atena</option>
-                <option value="Ares">Ares</option>
-                <option value="Hermes">Hermes</option>
-                <option value="Apolo">Apolo</option>
-                <option value="Afrodite">Afrodite</option>
-                <option value="Hefesto">Hefesto</option>
-                <option value="Dionísio">Dionísio</option>
-                <option value="Deméter">Deméter</option>
-                <option value="Nike">Nike</option>
-            </select><br><br>
-            <label for="armamento">Armamentos</label><br>
-            <select id="armamento" name="armamento">
-                <option value="Atirador">Atirador</option>
-                <option value="Espadachim">Espadachim</option>
-                <option value="Lutador">Lutador</option>
-            </select><br><br>
-            <label for="humanidade">Humanidade</label><br>
-            <select id="humanidade" name="humanidade">
-                <option value="Empático">Empático (25%)</option>
-                <option value="Desumano">Desumano (0%)</option>
-                <option value="Monstruoso">Monstruoso (-25%)</option>
-            </select>
+            <table>
+                <tr>
+                    <th><label for="nomeJogador">Nome do jogador</label><br></th>
+                    <th><label for="nomePersonagem">Nome do personagem</label><br></th>
+                    <th><label for="parenteDivino">Ascendente divino</label><br></th>
+                    <th><label for="armamento">Armamentos</label><br></th>
+                    <th><label for="humanidade">Humanidade</label><br></th>
+                </tr>
+                <tr>
+                    <td><input id="nomeJogador" name="nomeJogador" type="text"></td>
+                    <td><input id="nomePersonagem" name="nomePersonagem" type="text"></td>
+                    <td>
+                        <select id="parenteDivino" name="parenteDivino">
+                            <option value="Zeus">Zeus</option>
+                            <option value="Poseidon">Poseidon</option>
+                            <option value="Hades">Hades</option>
+                            <option value="Atena">Atena</option>
+                            <option value="Ares">Ares</option>
+                            <option value="Hermes">Hermes</option>
+                            <option value="Apolo">Apolo</option>
+                            <option value="Afrodite">Afrodite</option>
+                            <option value="Hefesto">Hefesto</option>
+                            <option value="Dionísio">Dionísio</option>
+                            <option value="Deméter">Deméter</option>
+                            <option value="Nike">Nike</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="armamento" name="armamento">
+                            <option value="Atirador">Atirador</option>
+                            <option value="Espadachim">Espadachim</option>
+                            <option value="Lutador">Lutador</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="humanidade" name="humanidade">
+                            <option value="Empático">Empático (25%)</option>
+                            <option value="Desumano">Desumano (0%)</option>
+                            <option value="Monstruoso">Monstruoso (-25%)</option>
+                        </select>
+                    </td>
+                </tr>
+            </table>
             <table>
                 <tr>
                     <th>Força</th>
