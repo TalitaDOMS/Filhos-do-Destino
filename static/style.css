@@ -37,6 +37,8 @@ div.titulo {
     background-color: #2f2100;
     color: #ffe4c4;
     padding: 5px 20px;
+    border-radius: 15px;
+    margin-bottom: 10px;
 }
 div.ficha {
     background-color: #d9b07f;
@@ -46,25 +48,23 @@ div.ficha {
 }
 
 td, th {
-    padding: 5px;
     text-align: center;
     width: auto;
     border: 1px solid black;
+    border-radius: 5px;
+    padding: 5px;
 }
 th {
     background-color: #604300;
     color: #ffe4c4;
-    padding: 10px;
 }
 
 td {
-    padding: 25px;
+    padding: 20px;
 }
 
 table {
     width: 100%;
-    margin-left: auto;
-    margin-right: auto;
     table-layout: fixed;
     word-wrap: break-word;
 }
@@ -75,6 +75,7 @@ table {
 input[type="text"], input[type="number"], select{
     width: 100%;
     padding: 5px;
+    margin: auto;
     border: 1px solid #604300;
     border-radius: 4px;
     background-color: #ffe4c4;

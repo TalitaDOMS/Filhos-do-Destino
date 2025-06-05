@@ -11,7 +11,7 @@
         <a href="/">Criar ficha</a>
         <a href="/fichas">Histórico de fichas</a>
     </nav>
-    <div class="conteudo">
+    <div class="ficha">
         <form action="/salvar" method="post">
             <table>
                 <tr>
@@ -81,6 +81,8 @@
                     <td><input id="aparencia" name="aparencia" type="number" min="1" max="5"></td>
                 </tr>
             </table>
+            <p>Você tem os seguintes pontos para distribuir:<br>5, 4, 3, 3, 2 e 1<br>Você pode subtrair um ponto de um desses números para adicionar em outro, mas jamais ficar com menos de um ponto. Esse valor será permanente, então pense com cuidado!</p>
+
             <button type="submit">Cadastrar ficha</button>
         </form>
     </div>
